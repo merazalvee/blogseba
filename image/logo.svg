@@ -2,12 +2,22 @@
 <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 200">
   <defs>
     <style>
+      :root {
+        --icon-fill: red; /* Default color */
+        --icon-stroke: #231f20; /* Default stroke color */
+      }
+
+      .drK :root {
+        --icon-fill: red; /* Dark mode color */
+        --icon-stroke: white; /* Dark mode stroke color */
+      }
+
       .cls-1, .cls-2 {
-        fill: red;
+        fill: var(--icon-fill);
       }
 
       .cls-2 {
-        stroke: #231f20;
+        stroke: var(--icon-stroke);
       }
     </style>
   </defs>
