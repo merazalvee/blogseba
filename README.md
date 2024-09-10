@@ -24,6 +24,4 @@ I'm a passionate **Web Developer** who loves crafting beautiful and functional w
 - **LinkedIn**: [linkedin.com/in/xahmedariyan](https://linkedin.com/in/xahmedariyan)
 - **Portfolio**: [xahmedariyan.dev](https://xahmedariyan.dev)
 
-### "Code is like humor. When you have to explain it, it’s bad." – Cory House
-
 Thanks for stopping by! 😊
