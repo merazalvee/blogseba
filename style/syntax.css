@@ -1,0 +1,68 @@
+/*
+
+Style Name:  Syntax
+Website:     Tech Rifles
+Platform:    Blogger
+Designers:   Xahmed Ariyan, Deo Kumar, Sagar Bishnoi, Armaan Kumar
+
+*/
+
+pre {background:var(--synxB);color:var(--synxC);direction:ltr;position:relative;border-radius:3px;overflow:hidden;margin:1.7em auto;font-family:var(--fontC)}
+pre >code, .cmCo i[rel='pre']{display:block;position:relative;font-family:var(--fontC);font-size:13px;line-height:1.6em;border-radius:3px;background:var(--synxB);color:var(--synxC);padding:20px;margin:1.7em auto;-moz-tab-size:2;tab-size:2;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;overflow:auto;direction:ltr;white-space:pre;text-align:start}
+pre >code {margin:0;color:inherit;background:inherit}
+pre::before, .cmCo i[rel='pre']::before{content:'</>';display:flex;justify-content:flex-end;position:-webkit-sticky;position:sticky;top:0;right:0;left:0;width:100%;font-size:12px;padding:0 12px;line-height:40px;background:inherit;color:inherit;border-bottom:1px solid var(--contentL);z-index:2}
+.cmCo i[rel='pre']::before{position:-webkit-sticky;position:sticky;inset:-20px -20px auto;margin:-20px -20px 20px;width:calc(100% + 40px)}
+pre[data-result-language]::before, .cmCo i[rel='pre'][data-result-language]::before{content:attr(data-result-language)}
+pre[data-comment]::before{content:attr(data-comment)}
+pre::after, .cmCo i[rel='pre']::after{--w:10px;--g:6px;--t:15px;--p:12px;--e:2px;--m:calc(var(--w) + var(--g));--r:-1;content:'';position:absolute;top:0;inset-inline-start:0;font-size:12px;line-height:40px;color:inherit;width:var(--w);height:var(--w);margin-inline-start:calc((var(--w) * 3) + (var(--g) * 3) + var(--p));border-radius:99px;box-shadow:calc(var(--m) * 3 * var(--r)) var(--t) 0 var(--synxDot1),calc(var(--m) * 2 * var(--r)) var(--t) 0 var(--synxDot2),calc(var(--m) * 1 * var(--r)) var(--t) 0 var(--synxDot3);overflow:visible;z-index:2}
+pre[data-source]::after{content:attr(data-source)}
+:not(pre) >code, .cmCo i[rel='code']{display:inline-block;padding:2px 5px;margin:0 3px;font-size:13px;border-radius:3px;line-height:1.6em;color:var(--synxC);background:var(--synxB);font-family:var(--fontC);font-style:normal;border:1px solid var(--contentL);direction:ltr;text-align:start}
+:root[dir=rtl] pre::before, :root[dir=rtl] .cmCo i[rel='pre']::before, :root[dir=rtl] pre::after, :root[dir=rtl] .cmCo i[rel='pre']::after{direction:rtl}
+:root[dir=rtl] pre::after, :root[dir=rtl] .cmCo i[rel='pre']::after{--r:1}
+
+/*
+
+Style Name:  Multi Syntax
+Website:     Tech Rifles
+Platform:    Blogger
+Designers:   Xahmed Ariyan, Deo Kumar, Sagar Bishnoi, Armaan Kumar
+
+*/
+
+.pre{margin:1.7em auto;background:var(--synxB);border-radius:5px}
+.pre pre{margin:0;background:inherit;border-radius:none}
+.pre >div:first-of-type{font-size:13px;border-color:rgba(0, 0, 0, .05);margin:0}
+.pre >div:first-of-type >*{padding:13px 20px}
+
+/*
+
+Style Name:  Syntax Mark
+Website:     Tech Rifles
+Platform:    Blogger
+Designers:   Xahmed Ariyan, Deo Kumar, Sagar Bishnoi, Armaan Kumar
+
+*
+
+code{counter-reset:mark-num}
+code mark{color:inherit}
+code mark, code .block{--c:var(--linkC)}
+code .gray{--c:var(--synxGray)}
+code .red{--c:var(--synxRed)}
+code .orange{--c:var(--synxOrange)}
+code .blue{--c:var(--synxBlue)}
+code .green{--c:var(--synxGreen)}
+code .gold{--c:var(--synxGold)}
+code .purple{--c:var(--synxPurple)}
+code .gray:not(mark), code .gray:not(mark) *, code .red:not(mark), code .red:not(mark) *, code .orange:not(mark), code .orange:not(mark) *, code .blue:not(mark), code .blue:not(mark) *, code .green:not(mark), code .green:not(mark) *, code .gold:not(mark), code .gold:not(mark) *, code .purple:not(mark), code .purple:not(mark) *{color:var(--c)}
+code .block{background-color:var(--c)}
+code .block,code .block *{color:#fff}
+code mark:not(.block){background-color:transparent;border-bottom:3px dashed var(--c);animation:blink-mark-border 1.5s infinite}
+code mark[data-before]::before,code mark[data-after]::after{display:inline-flex;align-items:center;justify-content:center;min-width:16.5px;height:16.5px;padding:0 4px;border:1px solid var(--c);border-radius:9px;font-size:9px;color:var(--c);font-weight:700;line-height:1.6em;vertical-align:text-bottom}
+code mark[data-before]::before{content:attr(data-before);margin-right:3px}
+code mark[data-after]::after{content:attr(data-after);margin-left:3px}
+code mark[data-before].block{border-top-left-radius:99px;border-bottom-left-radius:99px}
+code mark[data-after].block{border-top-right-radius:99px;border-bottom-right-radius:99px}
+code mark[data-before].block::before,code mark[data-after].block::after{background:var(--synxB)}
+code mark[data-before='$']::before,
+code mark[data-after='$']::after{content:counter(mark-num);counter-increment:mark-num}
+@keyframes blink-mark-border{0%{border-color:transparent}50%{border-color:var(--c)}100%{border-color:transparent}}
