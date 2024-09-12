@@ -1,0 +1,21 @@
+/*
+
+Style Name:  List
+Website:     Tech Rifles
+Platform:    Blogger
+Designers:   Xahmed Ariyan, Deo Kumar, Sagar Bishnoi, Armaan Kumar
+
+*/
+
+.noList, .steps, .pros, .cons{list-style:none;margin:0 0 25px;padding:0}
+.steps{--sz:30px;counter-reset:num;line-height:1.6}
+.steps >*{position:relative;counter-increment:num;padding-inline-start:calc(var(--sz) * 1.5)}
+.steps >*:not(:last-child){padding-bottom:calc(var(--sz) / 2)}
+.steps >*::before{content:counter(num) '.';display:flex;align-items:center;justify-content:center;position:absolute;top:-2px;inset-inline-start:0;width:var(--sz);height:var(--sz);border:1px solid var(--linkC);border-radius:50%;color:var(--linkC);font-size:small;line-height:1;transition:0.3s}
+.steps >*:hover::before{background-color:var(--linkC);color:var(--white)}
+.steps >*::after{content:'';position:absolute;top:calc(var(--sz) + 8px);inset-inline-start:calc(var(--sz) / 2);bottom:8px;border-inline-start:1px solid var(--linkC)}
+.steps .zmImg:not(.s){margin-top:1.2em}
+.pros, .cons{margin:5px 0 15px;padding-inline-start:10px;line-height:1.3;font-size:95%}
+.pros li::marker{content:'\002B'}
+.cons li::marker{content:'\2212'}
+.pros li, .cons li{margin-bottom:10px;padding-inline-start:10px}
