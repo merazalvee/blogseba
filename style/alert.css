@@ -7,7 +7,7 @@ Designers:   Xahmed Ariyan, Deo Kumar, Sagar Bishnoi, Armaan Kumar
 
 */
 
-.alert{--clr:var(--linkC);--szsp:20px;position:relative;border-radius:8px;margin:var(--szsp) 0;padding:calc(var(--szsp) * .6) var(--szsp);font-size:calc(var(--szsp) * .75);line-height:calc(var(--szsp) * 1.3);overflow:hidden;z-index:1}
+.alert{--clr:var(--linkC);--szsp:20px;position:relative;border: 1px solid var(--contentL) !important;border-radius:5px;margin:var(--szsp) 0;padding:calc(var(--szsp) * .6) var(--szsp);font-size:calc(var(--szsp) * .75);line-height:calc(var(--szsp) * 1.3);overflow:hidden;z-index:1}
 .alert:not(.outline){color:var(--clr)}
 .alert:not(.outline)::before{content:"";position:absolute;left:0;top:0;width:100%;height:100%;background:var(--clr);z-index:-1;opacity:.1}
 .alert.outline{border:1px solid var(--clr)}
