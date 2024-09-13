@@ -20,28 +20,14 @@ pre[data-source]::after{content:attr(data-source)}
 :root[dir=rtl] pre::before, :root[dir=rtl] .cmCo i[rel='pre']::before, :root[dir=rtl] pre::after, :root[dir=rtl] .cmCo i[rel='pre']::after{direction:rtl}
 :root[dir=rtl] pre::after, :root[dir=rtl] .cmCo i[rel='pre']::after{--r:1}
 
-/*
-
-Style Name:  Multi Syntax
-Website:     Tech Rifles
-Platform:    Blogger
-Designers:   Xahmed Ariyan, Deo Kumar, Sagar Bishnoi, Armaan Kumar
-
-*/
+/* Multi Syntax */
 
 .pre{margin:1.7em auto;background:var(--synxB);border-radius:5px}
 .pre pre{margin:0;background:inherit;border-radius:none}
 .pre >div:first-of-type{font-size:13px;border-color:rgba(0, 0, 0, .05);margin:0}
 .pre >div:first-of-type >*{padding:13px 20px}
 
-/*
-
-Style Name:  Syntax Mark
-Website:     Tech Rifles
-Platform:    Blogger
-Designers:   Xahmed Ariyan, Deo Kumar, Sagar Bishnoi, Armaan Kumar
-
-*
+/* Syntax Mark */
 
 code{counter-reset:mark-num}
 code mark{color:inherit}
@@ -67,14 +53,7 @@ code mark[data-before='$']::before,
 code mark[data-after='$']::after{content:counter(mark-num);counter-increment:mark-num}
 @keyframes blink-mark-border{0%{border-color:transparent}50%{border-color:var(--c)}100%{border-color:transparent}}
 
-/*
-
-Style Name:  Syntax Line Number
-Website:     Tech Rifles
-Platform:    Blogger
-Designers:   Xahmed Ariyan, Deo Kumar, Sagar Bishnoi, Armaan Kumar
-
-*/
+/* Syntax Line Number */
 
 pre .num{display:block;position:absolute;top:0;left:0;height:100%;overflow:hidden;counter-reset:line;border-right:1px solid var(--contentL);background-color:var(--synxB);z-index:1}
 pre .num +code{padding-left:48px;padding-right:15px}
@@ -83,14 +62,7 @@ pre .num >*:first-child{margin-top:60px}
 pre .num >*::before{content:counter(line)}
 pre .num >*.m::after{content:'';position:absolute;top:0;inset-inline-end:0;height:100%;border-left:2px solid var(--linkC)}
 
-/*
-
-Style Name:  Syntax Copy
-Website:     Tech Rifles
-Platform:    Blogger
-Designers:   Xahmed Ariyan, Deo Kumar, Sagar Bishnoi, Armaan Kumar
-
-*/
+/* Syntax Copy */
 
 pre .cp{position:absolute;top:55px;right:10px;display:flex;align-items:center;justify-content:center;border:1px solid var(--contentL);width:30px;height:30px;background:inherit;font-family:var(--fontB);border-radius:4px;cursor:pointer;visibility:hidden;opacity:0;transition:var(--trans-2)}
 pre:hover .cp{visibility:visible;opacity:.8}
