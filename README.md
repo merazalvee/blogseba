@@ -1,4 +1,4 @@
-# Hi, I'm Xahmed Ariyan! 👋
+# Hi, I'm Meraz Alvee! 👋
 
 I'm a passionate **Web Developer** who loves crafting beautiful and functional websites and web applications. My expertise lies in creating efficient, responsive, and user-friendly designs with a focus on simplicity and usability.
 
@@ -20,8 +20,8 @@ I'm a passionate **Web Developer** who loves crafting beautiful and functional w
 
 ## 📫 How to reach me:
 
-- **Email**: [admin@techrifles.com](mailto:admin@techrifles.com)
-- **LinkedIn**: [linkedin.com/in/xahmedariyan](https://linkedin.com/in/xahmedariyan)
-- **Portfolio**: [xahmedariyan.dev](https://xahmedariyan.dev)
+- **Email**: [admin@blogseba.com](mailto:admin@blogseba.com)
+- **LinkedIn**: [linkedin.com/in/merazalvee](https://linkedin.com/in/merazalvee)
+- **Portfolio**: [merazalvee.dev](https://merazalvee.dev)
 
 Thanks for stopping by! 😊
